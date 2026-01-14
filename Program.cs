@@ -1,7 +1,11 @@
+using dotnet_CRUD.Contexts;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<TodosContext>();
 
 var app = builder.Build();
 
