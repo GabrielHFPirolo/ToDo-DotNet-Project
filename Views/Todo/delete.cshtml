@@ -1,0 +1,9 @@
+@model dotnet_CRUD.Models.Todo
+
+<h1>@ViewData["Title"]</h1>
+<p>Você deseja excluir a task <strong>@Model.Title</strong>?</p>
+
+<form method="POST">
+    <button class="btn btn-danger" type="submit">Deletar</button>
+    <a asp-controller="Todo" asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>

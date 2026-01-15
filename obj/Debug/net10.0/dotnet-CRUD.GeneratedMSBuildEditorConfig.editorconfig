@@ -46,6 +46,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Gabriel Pirolo/Documents/Projects/dotnet-CRUD/Views/Todo/delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9kb1xkZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Gabriel Pirolo/Documents/Projects/dotnet-CRUD/Views/Todo/forms.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9kb1xmb3Jtcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

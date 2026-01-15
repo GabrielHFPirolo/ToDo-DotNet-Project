@@ -25,16 +25,36 @@
                     @(todo.FinishedAt.HasValue ? todo.FinishedAt : "em Andamento")
                 </td>
                 <td>
-                    <a class="btn btn-success btn-sm">Finalizar</a>
-                    <a class="btn btn-primary btn-sm">Editar</a>
-                    <a class="btn btn-danger btn-sm">Deletar</a>
+                    <a 
+                    asp-controller="Todo"
+                    asp-action="Finish"
+                    asp-route-id="@todo.Id"
+                    class="btn btn-success btn-sm @(todo.FinishedAt.HasValue ? "disabled" : "")"
+                    >Finalizar
+                    </a>
+                    <a 
+                    asp-controller="Todo" 
+                    asp-action="Edit" 
+                    asp-route-id="@todo.Id"
+                    class="btn btn-primary btn-sm @(todo.FinishedAt.HasValue ? "disabled" : "")"
+                    >
+                    Editar
+                    </a>
+                    <a
+                    asp-controller="Todo"
+                    asp-action="Delete"
+                    asp-route-id="@todo.Id" 
+                    class="btn btn-danger btn-sm"
+                    >
+                    Deletar
+                    </a>
                 </td>
             </tr>
         }
     </tbody>
     </table>
 
-    <a class="btn btn-dark btn-md">Nova Tarefa</a>
+    <a asp-controller="Todo" asp-action="Create" class="btn btn-dark btn-md">Nova Tarefa</a>
 }
 else{
     <p>Nenhuma Tarefa foi Cadastrada</p>

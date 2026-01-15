@@ -1,16 +1,20 @@
+@model dotnet_CRUD.Models.Todo
+
 <h1>@ViewData["Title"]</h1>
 
 <form method="POST">
     <div class="mb-3">
-        <label>Título</label>
+        <label asp-for="Title">Título</label>
         <br>
-        <input type="form-control">
+        <input asp-for="Title" class="form-control">
+        <span asp-validation-for="Title" class="text-danger"></span>
     </div>
     
     <div class="mb-3">
-        <label>Data de Entrega</label>
+        <label asp-for="DeadLine">Data de Entrega</label>
         <br>
-        <input type="form-control">
+        <input asp-for="DeadLine" type="date" class="form-control">
+        <span asp-validation-for="DeadLine" class="text-danger"></span>
     </div>
 
     <button class="btn btn-dark bnt-md" type="submit">Salvar</button>
